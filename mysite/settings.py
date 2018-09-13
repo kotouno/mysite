@@ -120,8 +120,8 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-import dj_datebase_url
-DATEBASES['default'] = dj_datebase_url.config()
+#import dj_datebase_url
+#DATEBASES['default'] = dj_datebase_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
