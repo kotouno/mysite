@@ -146,8 +146,16 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-import dj_database_url
-#DATEBASES['default'] = dj_datebase_url.config()
+DATEBASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mysite',
+        'USER': 'kotouno',
+        'PASSWORD': 'kotounoyuta',
+        'HOST': '',
+        'PORT': ''
+    }
+}
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
